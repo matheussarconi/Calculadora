@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fundo-calculadora:#333;
+    --tamanho-fonte-botoes:40px;
+    --cor-botoes-numericos:#505050;
+    --cor-botoes-vezes-div:#a6a6a6;
+    --cor-botoes-outros-sinais:#ff9500;
+    --cor-numeros-do-calculo:#fff;
+    --cor-fundo-numeros-do-calculo:#000;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.calculadora{
+    background-color: var(--fundo-calculadora);
+    width: 23vw;
+    border-radius: 20px;
+    height: 50vh;
+}   
+.numerosDoCalculo{
+    display: flex;
+    align-items: center;
+    justify-content:  flex-end;
+    background-color: var(--cor-fundo-numeros-do-calculo);
+    color: var(--cor-numeros-do-calculo);
+    border-radius: 10px;
+    font-size: 30px;
+    height: 10vh;
+    padding-bottom: none;
+}
+.teste{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: row;
+    width: 18vw;
+    gap: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-bottom: none;
+
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 40px;
+}
+.colunaUm,
+.colunaDois,
+.colunaTres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 7px;
+    width: 2vw;
+    
+}
+.colunaQuatro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    gap: 8px;
+}
+.multiplicar,.dividir,.limpar{
+    background-color: var(--cor-botoes-vezes-div);
+}
+.somar,.subtrair,.igual{
+    background-color: var(--cor-botoes-outros-sinais);
+}
+.um,.dois,.tres,.quatro,.cinco,.seis,.sete,.oito,.nove,.zero,.virgula{
+    background-color: var(--cor-botoes-numericos);
+}
+.um,.dois,.tres,.quatro,.cinco,.seis,.sete,.oito,.nove,.multiplicar,.dividir,.limpar,.subtrair,.somar,.virgula{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 4vw;
+    height: 6vh;
+    font-size: var(--tamanho-fonte-botoes);
+    border-radius: 500px;
+}
+.linhaInferior{
+    display: flex; 
+    align-items: center ;
+    margin-top: -30px;
+    /* margin-top: none; */
+}
+.zero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    width: 10vw;
+    font-size: var(--tamanho-fonte-botoes);
+    margin-left: 8px;
+    margin-right: 20px;
+}
+.igual{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 19vh;
+    border-radius: 100px;
+    width: 3vw;
+    font-size: var(--tamanho-fonte-botoes);
+}
